@@ -1,0 +1,7 @@
+type: svr
+encoder: google/vit-base-patch16-224-in21k
+svr_c: 1.0
+svr_kernel: rbf
+feature_mode: average
+cv_folds: 5
+random_state: 42

@@ -1,0 +1,6 @@
+type: ridge
+encoder: google/vit-base-patch16-224-in21k
+alpha: 1.0
+feature_mode: concatenate
+cv_folds: 5
+random_state: 42

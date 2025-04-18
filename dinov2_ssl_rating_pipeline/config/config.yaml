@@ -1,0 +1,42 @@
+hydra:
+  run:
+    dir: ./outputs
+
+experiment_id: rating_prediction_20250417_192836
+defaults:
+  - model: ridge
+  - _self_
+
+data:
+  img_dirs:
+    - <path1>
+    - <path2>
+  prefixes:
+    - <prefix1>
+    - <prefix2>
+  rating_columns:
+    - <column1>
+    - <column2>
+  views:
+    - <view1>
+    - <view2>
+    - <view3>
+    - <view4>
+    - <view5>
+    - <view6>
+    - <view7>
+  timepoints:
+    - Initial
+    - Final
+  rating_file: <path_to_xlsx>
+  unlabeled_dir: <path_to_unlabeled_imgs>
+
+model:
+  teacher_checkpoint: <path_to_checkpoint>
+  image_size: 224  # Must match your checkpoint
+  patch_size: 16   # Must match your checkpoint
+  alpha: 1.0
+  cv_folds: 5
+  random_state: 42
+  use_cached_logits: false
+  feature_mode: concatenate

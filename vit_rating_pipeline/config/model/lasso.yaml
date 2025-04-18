@@ -1,0 +1,6 @@
+type: lasso
+encoder: google/vit-base-patch16-224-in21k
+alpha: 0.5
+feature_mode: average
+cv_folds: 3
+random_state: 42

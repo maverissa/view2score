@@ -1,0 +1,30 @@
+hydra:
+  run:
+    dir: ./outputs
+
+defaults:
+  - model: random_forest
+  - _self_
+
+experiment_id: rating_regression_20250417_175830
+
+data:
+  img_dirs:
+    ['<path1>', '<path2>']
+  prefixes:
+    ['<prefix1>', '<prefix2>']
+  rating_columns:
+    - <column1>
+    - <column2>
+  views:
+    - <view1>
+    - <view2>
+    - <view3>
+    - <view4>
+    - <view5>
+    - <view6>
+    - <view7>
+  timepoints:
+    - Initial
+    - Final
+  rating_file: path_to_xlsx

@@ -1,0 +1,8 @@
+type: random_forest
+encoder: google/vit-base-patch16-224-in21k
+n_estimators: 500
+use_cached_logits: true
+max_depth: 10
+feature_mode: average
+cv_folds: 5
+random_state: 42
